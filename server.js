@@ -65,6 +65,13 @@ app.get('/about', (req, res) => {
     res.render('about.hbs', context);
 });
 
+app.get('/projects', (req, res) => {
+    context = {
+        pageTitle: 'projects Page'
+    }
+    res.render('about.hbs', context);
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Unable to handle request'
