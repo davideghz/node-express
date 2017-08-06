@@ -67,7 +67,7 @@ app.get('/about', (req, res) => {
 
 app.get('/projects', (req, res) => {
     context = {
-        pageTitle: 'projects Page'
+        pageTitle: 'Projects Page'
     }
     res.render('about.hbs', context);
 });
